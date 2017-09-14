@@ -1,0 +1,842 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0px; 
+    padding: 0px;
+    list-style: none; 
+    position: absolute;
+    z-index: 1000;
+    color: white;
+}
+
+ul li {
+    float: left;
+    width: 381px; 
+    height: 40px; 
+    background-color: black; 
+    opacity: 0.8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white; 
+    display: block;
+}
+
+ul li a:hover{
+    background-color: royalblue; 
+}
+
+.intro-verse {
+  padding-top: 0px;
+  padding-bottom: 700px;
+  background:	#4E556D url("http://www.tudorgirba.com/?_s=hieaAzpqqTMS-jFM") fixed center;
+  background-size: 430px;
+}
+
+.intro-message {
+  position:absolute;
+  margin: 0;
+  padding:0;
+  top: 360px;
+  left: 38%;
+  z-index:999;
+  line-height: 11.5px;
+  color: white;
+  text-align:center;
+}
+
+.earth {
+  position: absolute;
+  height:550px;
+  width: 550px; 
+  background:#6666ff;
+  border-radius: 50%;
+  top: -250px;
+  left: 27%;
+  z-index: 100;
+  box-shadow: inset 100px -75px 30px #22348D, -5px 8px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid aqua;
+  outline-color: aqua;  
+}
+
+.crater {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background:white;
+  border-radius: 50%; 
+  box-shadow: inset 9px -7px 5px #000066;
+  z-index: 150;
+  top: 55%;
+  left: 20%;
+}
+
+.crater:nth-child(1) {
+  top: 40%;
+  left: 70%;
+  height:160px; 
+  width: 150px;
+}
+
+.crater:nth-child(2){
+  top: 42%;
+  left: 20%;
+  height:75px; 
+  width:75px;
+}
+
+.crater:nth-child(3){
+  top: 60%;
+  left: 45%;
+  height: 30px;
+  width: 30px;
+}
+
+.crater:nth-child(4){
+  top: 30%; 
+  left: 35%;
+  height: 60px;
+  width: 60px;
+}
+
+.crater:nth-child(5){
+  top:10%; 
+  left:55%;
+  z-index:149;
+  height: 100px;
+  width:100px;
+}
+
+.moon {
+  position: absolute;
+  height:350px;
+  width: 350px; 
+  background:#73738c;
+  border-radius: 50%;
+  top: 5%;
+  left: -22%;
+  z-index: 100;
+  box-shadow: inset 45px -55px 50px #29293d, -5px 8px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid darkgray;
+  outline-color: darkgray;  
+}
+
+.m-crater {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background:#bfbfbf;
+  border-radius: 50%; 
+  box-shadow: inset 6px -4px 5px #29293d;
+  z-index: 150;
+  top: 20%;
+  left: 30%;
+}
+
+.m-crater:nth-child(1){
+  height: 35px;
+  width: 35px;
+  left: 75%;
+  top: 40%;
+}
+
+.m-crater:nth-child(2){
+  height: 20px;
+  width: 20px;
+  top: 60%;
+  left: 60%;
+}
+
+.m-crater:nth-child(3) {
+  height: 32px;
+  width: 32px; 
+  top: 45%;
+  left: 40%
+}
+
+.sun {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  left: 110%;
+  top: 10%;
+  background: #FDFF00;
+  border-radius: 50%;
+  box-shadow: inset 20px 20px 50px #FFC100;
+  border: 2px solid yellow;
+  outline-color: yellow;  
+}
+
+.x20 {
+  position: absolute; 
+  height: 45px;
+  width: 45px;
+  left: 100%; 
+  top: 240px;
+  background: #FFCDEE;
+  border-radius: 50%;
+  box-shadow: inset -1px -7px 5px #CCA2BE, 5px 5px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid hotpink;
+  outline-color: hotpink;  
+}
+
+.x20-crater {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background:#E38DC6;
+  border-radius: 50%; 
+  box-shadow: inset 0.1px -1px 0.1px #B06797;
+  z-index: 150;
+  top: 20%;
+  left: 30%;
+}
+
+.x20-crater:nth-child(1){
+  width: 3px;
+  height: 3px;
+  top: 60%;
+  left: 40%;
+}
+
+.x21{
+  position: absolute; 
+  height: 80px;
+  width: 80px;
+  left: 73%; 
+  top: 330px;
+  background: #DF6363;
+  border-radius: 50%;
+  box-shadow: inset 9px -8px 9px #9A4848, 5px 5px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid firebrick;
+  outline-color: firebrick;  
+}
+
+.x21-crater {
+  position: absolute; 
+  background:#B44B4B;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px; 
+  box-shadow: inset 1.5px -2px 1px #472323;
+  top: 20%;
+  left: 30%;
+}
+
+.x21-crater:nth-child(1){
+  height: 8px;
+  width: 8px;
+  top: 50%;
+  left: 70%;
+}
+
+.x21-crater:nth-child(2){
+  height: 11px;
+  width: 11px;
+  top: 60%;
+  left: 22%;
+}
+
+.x22 {
+  position: absolute; 
+  height: 20px;
+  width: 20px;
+  left: 30%; 
+  top: 325px;
+  background: #ADC97A;
+  border-radius: 50%;
+  box-shadow: inset 3px -1px 1px #859A5F, -10px -5px 0 rgba(0, 0, 0, 0.1);   
+  z-index: 10;
+  border: 0.05px solid greenyellow;
+  outline-color: greenyellow;  
+}
+
+.x22-crater {
+  position: absolute; 
+  background:#D6FF8B;
+  border-radius: 50%;
+  height: 2px;
+  width: 2px; 
+  box-shadow: inset 1px -0.2px 0.5px #7B9251;
+  top: 20%;
+  left: 30%;
+  z-index: 10;
+}
+
+.x22-crater:nth-child(1){
+  height: 3px;
+  width: 3px;
+  left: 60%;
+  top: 30%;
+  z-index: 10;
+}
+
+.x23 {
+  position: absolute; 
+  height: 110px;
+  width: 110px;
+  left: 10%; 
+  top: 465px;
+  background: #5CE2FF;
+  border-radius: 50%;
+  box-shadow: inset 10px -7px 9px #429CB0, -10px -5px 0 rgba(0, 0, 0, 0.1);   
+  z-index: 10;
+  border: 1px solid darkblue;
+  outline-color: darkblue;  
+}
+
+.x23-crater {
+  position: absolute; 
+  background:#56BFBC;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px; 
+  box-shadow: inset 3px -2px 3px #357C7A;
+  top: 20%;
+  left: 45%;
+  z-index: 10;
+}
+
+.x23-crater:nth-child(1){
+  height: 15px;
+  width: 15px;
+  left: 40%;
+  top: 60%;
+  z-index: 10;
+}
+
+.spaceship {
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-left: 15px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 1999;
+  top: 200px;
+  left: 70%;
+  border-radius:30%;
+}
+
+.trail {
+  width: 138px;
+  height: 2px;
+  position: absolute;
+  background:#FFFFFF;
+  z-index: 150;
+  top: 55%;
+  left: -150px;
+  opacity:0.65;
+}
+
+.trail:nth-child(1){
+  width: 285px;
+  height: 1.5px;
+  position: absolute;
+  background:#FFFFFF;
+  z-index: 150;
+  top: 55%;
+  left: -430.2px;
+  opacity: 0.45;
+}
+
+.trail:nth-child(2) {
+  width: 150px;
+  height: 1.35px;
+  opacity:0.35;
+  left: -580.5px;
+  top: 0.25px;
+}
+
+.trail:nth-child(3) {
+  width: 125px;
+  height: 1.35px;
+  opacity:0.1;
+  left: -703.5px;
+  top: 0.25px;
+}
+
+.spaceship1 {
+  position: absolute;
+  width: 5px;
+  height: 2.5px;
+  border-left: 10px solid black;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  z-index: 1999;
+  top: 235px;
+  left: 80%;
+  border-radius:30%;
+}
+
+.trail1 {
+  width: 138px;
+  height: 0.75px;
+  position: absolute;
+  background:#FFFFFF;
+  z-index: 99;
+  top: 55%;
+  left: -147px;
+  opacity:0.8;
+}
+
+.trail1:nth-child(1){
+  width: 280px;
+  height: 0.6px;
+  position: absolute;
+  background:#FFFFFF;
+  z-index: 150;
+  top: 55%;
+  left: -375px;
+  opacity: 0.6;
+  z-index:5;
+}
+
+.trail1:nth-child(2) {
+  width: 150px;
+  height: 0.45px;
+  opacity:0.45;
+  left: -525.5px;
+  top: 0.25px;
+  z-index: 5;
+}
+
+.trail1:nth-child(3) {
+  width: 125px;
+  height: 0.25px;
+  opacity:0.3;
+  left: -650.5px;
+  top: 0.25px;
+  z-index: 5;
+}
+
+.spaceship2 {
+  position: absolute;
+  width: 5px;
+  height: 2.5px;
+  border-left: 12px solid black;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  z-index: 1999;
+  top: 265px;
+  left: 67%;
+  border-radius:30%;
+}
+
+.trail2 {
+  width: 138px;
+  height: 1.25px;
+  position: absolute;
+  background:#FFFFFF;
+  z-index: 1;
+  top: 55%;
+  left: -147px;
+  opacity:0.8;
+}
+
+.trail2:nth-child(1){
+  width: 280px;
+  height: 0.75px;
+  position: absolute;
+  background:#FFFFFF;
+  z-index: 150;
+  top: 55%;
+  left: -375px;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.trail2:nth-child(2) {
+  width: 150px;
+  height: 0.35px;
+  opacity:0.45;
+  left: -522.5px;
+  top: 0.25px;
+  z-index: 1;
+}
+
+.trail2:nth-child(3) {
+  width: 125px;
+  height: 0.25px;
+  opacity:0.3;
+  left: -646.5px;
+  top: 0.25px;
+  z-index: 5;
+}
+
+.spaceship3 {
+  position: absolute;
+  width: 5px;
+  height: 2.5px;
+  border-left: 10px solid black;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  z-index: 1999;
+  top: 535px;
+  left: 90%;
+  border-radius:30%;
+}
+
+.trail3 {
+  width: 138px;
+  height: 1.25px;
+  position: absolute;
+  background:#FFFFFF;
+  z-index: 1;
+  top: 55%;
+  left: -147px;
+  opacity:0.8;
+}
+
+.trail3:nth-child(1){
+  width: 280px;
+  height: 0.75px;
+  position: absolute;
+  background:#FFFFFF;
+  z-index: 150;
+  top: 55%;
+  left: -375px;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.trail3:nth-child(2) {
+  width: 150px;
+  height: 0.35px;
+  opacity:0.45;
+  left: -522.5px;
+  top: 0.25px;
+  z-index: 1;
+}
+
+.trail3:nth-child(3) {
+  width: 125px;
+  height: 0.25px;
+  opacity:0.3;
+  left: -646.5px;
+  top: 0.25px;
+  z-index: 5;
+}
+
+.info-section-a {
+  position: relative;
+  background-color: white;
+  padding: 50px 0;
+  padding-bottom: 20px;
+  z-index: 102;
+  text-align:center;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-color: black;
+}
+
+.col-md-3{
+  border-style: solid;
+  border-color: #C7C7C7;
+  padding-top: 7px;
+  margin-left: 70px;
+}
+
+.col-md-3:hover { 
+  transition: all .25s; 
+  background:	#4E556D url("http://www.tudorgirba.com/?_s=hieaAzpqqTMS-jFM") fixed center;
+  color: white;
+  background-size: 430px;
+  text-shadow: -3px 1px black;
+  border-color:#1A3389;
+}
+
+.i1{
+  position: relative;
+  height:50px;
+  width: 50px;
+  background-color:#ADC97A;
+  border-radius: 50%;
+  left: 42%;
+  box-shadow: inset 9px -8px 9px #859A5F, -1px 2px 0 rgba(0, 0, 0, 0.1);  
+}
+
+.i1-crater {
+  position: absolute; 
+  background:#D6FF8B;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px; 
+  box-shadow: inset 3px -2px 2px #7B9251;
+  top: 20%;
+  left: 30%;
+  z-index: 10;
+}
+
+.i1-crater:nth-child(1) {
+  top:40%;
+  left: 60%;
+  height: 6px;
+  width: 6px;
+}
+
+.i2 {
+  position: relative;
+  height:50px;
+  width: 50px;
+  background-color:#DF6363;
+  border-radius: 50%;
+  left: 42%;
+  box-shadow: inset 9px -8px 9px #9A4848, -1px 2px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.i2-crater {
+  position: absolute; 
+  background:#B44B4B;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px; 
+  box-shadow: inset 1px -2px 1px #472323;
+  top: 20%;
+  left: 30%;
+  z-index: 10;
+}
+
+.i2-crater:nth-child(1) {
+  top:40%;
+  left: 60%;
+  height: 6px;
+  width: 6px;
+}
+
+.i3 {
+  position: relative;
+  height:50px;
+  width: 50px;
+  background-color:#73738c;
+  border-radius: 50%;
+  left: 42%;
+  box-shadow: inset 9px -8px 9px #29293d, -1px 2px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.i3-crater {
+  position: absolute; 
+  background:#bfbfbf;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px; 
+  box-shadow: inset 1px -2px 1px #29293d;
+  top: 20%;
+  left: 30%;
+  z-index: 10;
+}
+
+.i3-crater:nth-child(1) {
+  top:40%;
+  left: 60%;
+  height: 6px;
+  width: 6px;
+}
+
+.about-me {
+  position: absolute; 
+  background-color: #4E556D;
+  width: 100%;
+  background:	#4E556D url("http://www.tudorgirba.com/?_s=hieaAzpqqTMS-jFM") fixed center;
+  background-size:430px;
+  padding-bottom: 10px;
+  padding: 100px;
+  z-index: 103;
+  border-bottom-style: solid;
+  border-color: black;
+  color:white;
+  text-shadow: -3px 1px black;
+}
+
+.big-ship {
+  position: absolute;
+  height: 0; 
+  width: 80px;
+  border-bottom: 160px solid black;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  top: -90px;
+  left: 40%;
+  border-radius:30%;
+}
+
+.cockpit {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: grey;
+  opacity: 0.5;
+  border-radius:45%;
+  top:50px;
+  left:-25px;
+}
+
+.thruster {
+  position:absolute;
+  display:block;
+  width:35px; 
+  height:50px;
+  background-color:grey;
+  border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+  left: -16px;
+  top:137px;
+  z-index: -1;
+}
+
+.beacon-light{
+  position: absolute;
+  background-color: #832525; 
+  border-radius: 50%; 
+  height:20px;
+  width:20px;
+  top:120px; 
+  left:-50px;
+  opacity:0.5;
+}
+
+.nav-light {
+  position: absolute;
+  background-color: #2C3C76; 
+  border-radius: 50%; 
+  height:20px;
+  width:20px;
+  top:120px; 
+  left:27px;
+  opacity:0.5;
+}
+
+.b-trail {
+  position: inherit;
+  left: 15.5px;
+  top: 120px; 
+  margin-left:-31px;
+  margin-top: 40px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 100px 17px 0 17px;
+  border-color: #f2b31b transparent transparent transparent;
+  animation: lit .1s infinite linear;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.b-trail2{
+  position: inherit;
+  left: 15.5px;
+  top: 120px;
+  margin-left:  -31px;
+  margin-top: 40px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 100px 17px 0 17px;
+  border-color: white transparent transparent transparent;
+  animation: lit-2 .1s infinite linear;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+@keyframes lit {
+	0% {border-width: 200px 17px 0 17px;}
+  25% {border-width: 200px 17px 0 17px;}
+  50% {border-width: 175px 17px 0 17px;}
+  75% {border-width: 125px 17px 0 17px;}
+	100% {border-width: 100px 17px 0 17px;}
+}
+@keyframes lit-2 {
+	0% {border-width: 50px 17px 0 17px;}
+  25% {border-width: 50px 17px 0 17px;}
+  50% {border-width: 86px 17px 0 17px;}
+  75% {border-width: 38px 17px 0 17px;}
+	100% {border-width: 50px 17px 0 17px;}
+}
+
+
+.projects {
+  position: absolute;
+  margin-top:220px;
+  padding: 200px 90px; 
+  background-color: white;
+  text-align:center;
+  width: 100%;
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-style: solid;
+  border-color: black;
+  opacity:0.9;
+}
+
+.thumbnail:hover {
+   border-color:#1A3389;
+}
+
+.thumbnail * {
+  transition: all .25s;
+}
+
+.thumbnail h4 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.thumbnail p {
+  line-height: 24px;
+}
+
+.thumbnail:hover h4,
+.thumbnail:hover p {
+  color: #AFAFAF;
+}
+
+.thumbnail img {
+  margin-top: 6px;
+}
+
+.thumbnail:hover img {
+  opacity: 0.37;
+}
+
+.thumbnail:after {
+  font-family: 'FontAwesome';
+  content: "\f197";
+  color: red;
+  font-size: 48px;
+  line-height: 80px;
+  top: 70%;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  transition: all .35s;
+  opacity: 0;
+  width: 86px;
+  height: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  background: black;
+  border: 6px solid black;
+}
+
+.thumbnail:hover:after {
+  top: 25%;
+  opacity: 1;
+  color: white;
+  background: black;
+  border: 3px solid black;
+  border-color:#1A3389;
+}
