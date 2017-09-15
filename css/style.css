@@ -33,11 +33,51 @@ ul li a:hover{
     background-color: royalblue; 
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu {
+    display: block;
+}
+
+.show-menu {
+    text-decoration: none;
+    color: #fff; 
+    background: #19c589;
+    text-align: center; 
+    padding: 10px 0; 
+    display: none; 
+}
+/* Responsive nav */
+@media screen and (max-width: 1904px) {
+    ul {
+        position: absolute;
+        width:100%;
+    }
+    li {
+        margin-bottom: 1px;  
+        width:20%;
+    }
+    ul li {
+        width: 20%;
+    }
+    .show-menu{
+        display: none;
+    }
+    body {
+        background-image: none; 
+    }
+}
+
+
+
 .intro-verse {
   padding-top: 0px;
   padding-bottom: 700px;
   background:	#4E556D url("http://www.tudorgirba.com/?_s=hieaAzpqqTMS-jFM") fixed center;
   background-size: 430px;
+  width: 1905px;
 }
 
 .intro-message {
@@ -523,6 +563,26 @@ ul li a:hover{
   left: -646.5px;
   top: 0.25px;
   z-index: 5;
+}
+
+@media screen and (max-width: 1904px) {
+    .intro-verse {
+        width:100%; 
+        position: inherit;
+    }
+    .intro-message {
+       position:absolute;
+       width:auto; 
+    }
+    .earth {
+        position: absolute;
+        width: 50%;
+    }
+    .sun {
+        position:absolute; 
+        width:8.6%; 
+        left:95%;
+    }
 }
 
 .info-section-a {
