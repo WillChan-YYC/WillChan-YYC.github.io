@@ -2,39 +2,55 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Will Chan</title>
+  <title>William Chan</title>
   
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 280) {
+      $('#nav_bar').addClass('ul-fixed');
+    }
+    if ($(window).scrollTop() < 281) {
+      $('#nav_bar').removeClass('ul-fixed');
+    }
+  });
+});
+
+    </script>
+
+
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <label for='show-menu' class='show-menu'>Show Menu</label>
-    <input type='checkbox' id='show-menu' role='button'> 
-
-    <ul>
-    <li><a href='#'>Home</a></li>
-    <li><a>Skills</a></li>
-    <li><a>About Me</a></li>
-    <li><a>Projects</a></li>
-    <li><a>Contact</a></li>
-    </ul>
-    
+    <nav id="nav_bar"> 
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a>Contact</a></li>
+        </ul>
+    </nav>
 <body>
   <body>
 
       
-  <div class="intro-verse">
+  <div class="intro-verse" id="home">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           
              <div class="intro-message">
-            <h1>WILL CHAN</h1> 
+            <h1>WILLIAM CHAN</h1> 
                <h5>Always Learning</h5>
           </div>
           
@@ -111,7 +127,7 @@
       </div>
     </div>
     
-<div class="info-section-a">
+<div class="info-section-a" id="skills">
   <div class="container"> 
   <div class= "row">
     <div class="col-md-3">
@@ -126,25 +142,25 @@
         <div class="i2-crater"></div>
         <div class="i2-crater"></div>
       </div>
-      <h2>Skillset</h2>
-  <p>Most my coding is self-taught and I use a variety of resources on the web, such as Udemy and FreeCodeCamp.  I am profiecient in using HTML, CSS, JQuery and Bootstrap.</p></div>
+      <h2>Coding</h2>
+  <p>Through the use of the interweb and the free resources available I self-taught myeslf the basics of coding.  I am profiecient in using HTML, CSS, JQuery and Bootstrap.</p></div>
     <div class="col-md-3">
       <div class="i3">
         <div class="i3-crater"></div>
         <div class="i3-crater"></div>
       </div>
       <h2>Future</h2>
-  <p>Javascript will be my next language to master before I move on to designing mobile applications with Swift.  I am currently working on a few projects with a brilliant cohort that I have recently joined.</p></div>
+  <p>After finish my degree I want to pursue a career toward the Information Technology and receive my Comptia certificate and also become CCNA certified.</p></div>
   </div>
   </div>
     </div>
 
-<div class="about-me">
+<div class="about-me" id="about-me">
   <div class="container">
     <div class="row">
       <div class="col-md-8">
         <h1 class="section-heading">About me</h1>
-        <p>I am a Calgary born resident and have started learning web-development by myself while going to school at the University of Calgary in a Commerce degree in Tourism and Marketing.  I find web-development facinating and a great tool to enhance my marketing knowledge in branding.  I love what I do and I hope to be working with you in the near future. </p>
+        <p>I am a Calgary born resident and have started learning web-development by myself while going to school at the University of Calgary in a Commerce degree in Tourism and Marketing.  I find web-development facinating and a great tool to enhance my marketing knowledge in branding.  I love travelling, food, basketball and being outdoors. </p>
         </div>
         
         <div class="col-md-4">
@@ -163,7 +179,7 @@
   </div>
   </div> 
 
-<div class="projects"> 
+<div class="projects" id="projects"> 
   <div class="container">
     <h1>Projects</h1>
     <h5>More projects to come</h5>
@@ -195,7 +211,9 @@
 </body>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-  
+
+    
 </body>
 </html>

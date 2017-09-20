@@ -3,24 +3,31 @@ html, body {
     padding: 0;
 }
 
+.ul-fixed {
+    opacity: 0.5;
+    color:red;
+}
+
 ul {
     margin: 0px; 
     padding: 0px;
     list-style: none; 
-    position: absolute;
-    z-index: 1000;
+    position: fixed;
+    z-index: 3000;
     color: white;
+    text-decoration: none;
 }
 
 ul li {
     float: left;
-    width: 381px; 
+    width: 384px; 
     height: 40px; 
     background-color: black; 
     opacity: 0.8;
     line-height: 40px;
     text-align: center;
     font-size: 20px;
+    text-decoration: none;
 }
 
 ul li a {
@@ -77,7 +84,7 @@ input[type=checkbox]:checked ~ #menu {
   padding-bottom: 700px;
   background:	#4E556D url("http://www.tudorgirba.com/?_s=hieaAzpqqTMS-jFM") fixed center;
   background-size: 430px;
-  width: 1905px;
+  width: 1920px;
 }
 
 .intro-message {
@@ -210,8 +217,8 @@ input[type=checkbox]:checked ~ #menu {
   background: #FDFF00;
   border-radius: 50%;
   box-shadow: inset 20px 20px 50px #FFC100;
-  border: 2px solid yellow;
-  outline-color: yellow;  
+  border: 2px solid white;
+  outline-color: white;  
 }
 
 .x20 {
@@ -576,7 +583,6 @@ input[type=checkbox]:checked ~ #menu {
     }
     .earth {
         position: absolute;
-        width: 50%;
     }
     .sun {
         position:absolute; 
